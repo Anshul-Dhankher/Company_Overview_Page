@@ -36,7 +36,7 @@ export const HeaderInfoPanel = (props: IProps) => {
   return (
     <>
       <hr>
-      <div className="headerInfoPanel">
+      <div className="grid-col-3-small">
         <div className="flex-column-small">
           <div className="text secondary">AUTHORITY</div>
           <div className="text">
@@ -71,14 +71,4 @@ Utils
 export const getIconBasedOnStatus = (isTrue: Boolean) => {
   return isTrue ? <TickIcon /> : <CrossIcon />;
 };
-```
-
-CSS
-
-```css
-.headerInfoPanel {
-  display: grid;
-  gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 ```

@@ -36,7 +36,7 @@ export type Onboarding = {
 };
 
 export type Assessment = {
-  isOperatingStatusInactive: Boolean;
+  isOperatingStatusActive: Boolean;
   isAuthorityActive: Boolean;
   isInsuranceActive: Boolean;
   isInspectedWithin24Months: Boolean;
@@ -44,7 +44,7 @@ export type Assessment = {
   is8YearsAuthorize: Boolean;
 };
 
-export type Equipments = {
+export type Equipment = {
   powerUnits: Number;
   trailers: Number;
   reefers: Number;
@@ -52,7 +52,7 @@ export type Equipments = {
 
 export type StatisticInfo = {
   withinYears: Number;
-  count: Number;
+  total: Number;
 };
 
 export type Insurance = {
@@ -83,7 +83,7 @@ export type CompanyInfo = {
   recommendation: Recommendation;
   onBoarding: Onboarding;
   assessment: Assessment;
-  equipments: Equipments;
+  equipment: Equipment;
   inspections: StatisticInfo;
   violations: StatisticInfo;
   crashes: StatisticInfo;

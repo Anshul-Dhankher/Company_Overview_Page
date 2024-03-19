@@ -46,3 +46,15 @@
   flex-direction: column;
   column-gap: 15px;
 }
+
+.grid-col-2-small {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.grid-col-3-small {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}

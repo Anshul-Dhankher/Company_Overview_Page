@@ -10,9 +10,9 @@ This component will be the parent component for below and will accept props from
 - CarrierInfo
   - [SmartRecommendation](SmartRecommendation.md)
   - [CarrierOnboarding](CarrierOnboarding.md)
-  - Assessment
-  - Equipment
-  - StatisticInfo (3 occurance with different props for inspections, violations, crashes)
+  - [Assessment](Assessment.md)
+  - [Equipment](Equipment.md)
+  - [StatisticInfo](StatisticInfo.md) (3 occurance with different props for inspections, violations, crashes)
   - InsuranceFilling
   - Associations
 
@@ -23,7 +23,7 @@ interface IProps {
   recommendation: Recommendation;
   onboarding: Onboarding;
   assessment: Assessment;
-  equipments: Equipments;
+  equipment: Equipment;
   inspections: StatisticInfo;
   violations: StatisticInfo;
   crashes: StatisticInfo;
@@ -41,13 +41,22 @@ export const CarrierInfo = (props: IProps) => {
       <SmartRecommendation recommendation={props.recommendation} />
       <CarrierOnboarding onboarding={props.Onboarding} />
       <Assessment assessment={props.assessment} />
-      <Equipment equipments={props.equipments} />
-      <StatisticInfo statistics={props.inspections}>
-      <StatisticInfo statistics={props.violations}>
-      <StatisticInfo statistics={props.crashes}>
+      <Equipment equipment={props.equipment} />
+      <StatisticInfo statisticsInfo={props.inspections} heading="Inspections">
+      <StatisticInfo statisticsInfo={props.violations} heading="Violations">
+      <StatisticInfo statisticsInfo={props.crashes} heading="Crashes">
       <InsuranceFilling insurance={props.insurance} />
       <Associations associations={props.associations} />
     </div>
   );
+};
+```
+
+Utils
+
+```ts
+/*This function can also be defined as global function based on the choice that <TickIcon /> and <CrossIcon> from headerInfoPanel are same */
+export const getIconBasedOnStatus = (status: Boolean) => {
+  return status ? <SmallTickIcon /> : <SmallCrossIcon />;
 };
 ```

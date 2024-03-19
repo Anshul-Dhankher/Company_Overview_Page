@@ -51,7 +51,7 @@ Utils
 
 ```ts
 /*This function can also be defined as global function based on the choice that <TickIcon /> and <CrossIcon> from headerInfoPanel are same */
-export const getIconBasedOnStatus = (isRecommended: Boolean) => {
-  return isRecommended ? <SmallTickIcon /> : <SmallCrossIcon />;
+export const getIconBasedOnStatus = (status: Boolean) => {
+  return status ? <SmallTickIcon /> : <SmallCrossIcon />;
 };
 ```

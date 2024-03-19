@@ -54,12 +54,3 @@ export const SmartRecommendation = (props: IProps) => {
   );
 };
 ```
-
-Utils
-
-```ts
-/*This function can also be defined as global function based on the choice that <TickIcon /> and <CrossIcon> from headerInfoPanel are same */
-export const getIconBasedOnRecommendation = (isRecommended: Boolean) => {
-  return isRecommended ? <TickIcon /> : <CrossIcon />;
-};
-```
