@@ -1,0 +1,48 @@
+.company-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.text {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.heading {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: bold;
+}
+
+.secondary {
+  color: #888888;
+}
+
+.flex-column-small {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+}
+
+.flex-column-big {
+  display: flex;
+  flex-direction: column;
+  column-gap: 15px;
+}
