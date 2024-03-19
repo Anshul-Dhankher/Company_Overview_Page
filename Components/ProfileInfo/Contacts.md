@@ -13,7 +13,7 @@ interface IProps {
   contacts: Contacts[];
 }
 
-//Note- Note Defined here for reference look up
+//Note- Not Defined here for reference look up
 interface Contact = {
   id: String;
   name: String;

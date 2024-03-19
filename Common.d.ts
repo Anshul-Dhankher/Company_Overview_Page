@@ -30,7 +30,7 @@ export type Recommendation = {
   description: String;
 };
 
-export type OnBoarding = {
+export type Onboarding = {
   isCarrierSetupWithCompany: Boolean;
   isCarrierChaineVerified: Boolean;
 };
@@ -81,7 +81,7 @@ export type CompanyInfo = {
   directoryInfo: DirectoryInfo;
   contacts: Contact[];
   recommendation: Recommendation;
-  onBoarding: OnBoarding;
+  onBoarding: Onboarding;
   assessment: Assessment;
   equipments: Equipments;
   inspections: StatisticInfo;

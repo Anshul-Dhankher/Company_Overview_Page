@@ -14,7 +14,7 @@ interface IProps {
 }
 ```
 
-For Reference defining
+For Reference
 
 ```ts
  StatusInfo = {

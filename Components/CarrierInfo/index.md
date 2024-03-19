@@ -8,8 +8,8 @@ which is designed style in flex with row gap defined to achieve the same UI desi
 This component will be the parent component for below and will accept props from CompanyOverview Component:-
 
 - CarrierInfo
-  - SmartRecommendation
-  - CarrierOnboarding
+  - [SmartRecommendation](SmartRecommendation.md)
+  - [CarrierOnboarding](CarrierOnboarding.md)
   - Assessment
   - Equipment
   - StatisticInfo (3 occurance with different props for inspections, violations, crashes)
@@ -21,7 +21,7 @@ Typescript Types
 ```ts
 interface IProps {
   recommendation: Recommendation;
-  onBoarding: OnBoarding;
+  onboarding: Onboarding;
   assessment: Assessment;
   equipments: Equipments;
   inspections: StatisticInfo;
@@ -39,7 +39,7 @@ export const CarrierInfo = (props: IProps) => {
   return (
     <div className="overview-item">
       <SmartRecommendation recommendation={props.recommendation} />
-      <CarrierOnboarding onBoarding={props.OnBoarding} />
+      <CarrierOnboarding onboarding={props.Onboarding} />
       <Assessment assessment={props.assessment} />
       <Equipment equipments={props.equipments} />
       <StatisticInfo statistics={props.inspections}>

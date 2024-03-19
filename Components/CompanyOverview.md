@@ -36,7 +36,7 @@ export type CompanyInfo = {
   directoryInfo: DirectoryInfo;
   contacts: Contact[];
   recommendation: Recommendation;
-  onBoarding: OnBoarding;
+  onboarding: Onboarding;
   assessment: Assessment;
   equipments: Equipments;
   inspections: StatisticInfo;
@@ -62,16 +62,16 @@ export const CompanyOverview = () => {
 
   return (
     <div className="company-overview">
-      <CompanyProfile
+      <ProfileInfo
         lastBookingDate={companyInfo.lastBookingDate}
         headerInfo={companyInfo.headerInfo}
         specialties={companyInfo.specialties}
         directoryInfo={companyInfo.directoryInfo}
         contacts={companyInfo.contacts}
       />
-      <CarrierProfile
+      <CarrierInfo
         recommendation={companyInfo.recommendation}
-        onBoarding={companyInfo.onBoarding}
+        onboarding={companyInfo.onboarding}
         assessment={companyInfo.assessment}
         equipments={companyInfo.equipments}
         inspections={companyInfo.inspections}
