@@ -7,21 +7,21 @@ This Component will be the root component for the company overview page where th
 This component will be the parent component for others and the data will flow as below :-
 
 - CompanyOverview
-  - ProfileInfo
-    - HeaderInfoPanel
-    - RateCarrierCard
-    - ImageGallery
-    - Specialties
-    - DirectoryInfo
-    - Contacts
-  - CarrierInfo
-    - SmartRecommendation
-    - CarrierOnboarding
-    - Assessment
-    - Equipment
-    - StatisticInfo (3 occurance with different props for inspections, violations, crashes)
-    - InsuranceFilling
-    - Associations
+  - [ProfileInfo](/Components/ProfileInfo/index.md)
+    - [HeaderInfoPanel](/Components/ProfileInfo/HeaderInfoPanel.md)
+    - [RateCarrierCard](/Components/ProfileInfo/RateCarrierCard.md)
+    - [ImageGallery](/Components/ProfileInfo/ImageGallery.md)
+    - [Specialties](/Components/ProfileInfo/Specialties.md)
+    - [DirectoryInfo](/Components/ProfileInfo/Specialties.md)
+    - [Contacts](/Components/ProfileInfo/Contacts.md)
+  - [CarrierInfo](/Components//CarrierInfo/index.md)
+    - [SmartRecommendation](/Components/CarrierInfo/SmartRecommendation.md)
+    - [CarrierOnboarding](/Components/CarrierInfo/CarrierOnboarding.md)
+    - [Assessment](/Components/CarrierInfo/Assessment.md)
+    - [Equipment](/Components/CarrierInfo/Equipment.md)
+    - [StatisticInfo](/Components/CarrierInfo/StatisticInfo.md) (3 occurance with different props for inspections, violations, crashes)
+    - [InsuranceFilling](/Components/CarrierInfo/InsuranceFilling.md)
+    - [Associations](/Components/CarrierInfo/Associations.md)
 
 Typescript Types
 
@@ -49,14 +49,20 @@ export type CompanyInfo = {
 
 Component Logic and props passing
 
+```ts
+interface IProps {
+  id: String;
+}
+```
+
 ```tsx
-export const CompanyOverview = () => {
+export const CompanyOverview = (props: IProps) => {
   const [companyInfo, setCompanyInfo] = useState<CompanyInfo>();
 
   useEffect(() => {
     /*
     API call to back for fetching companyInfo from backend.
-    call.then(setCompanyInfo(data)).catch().finally();
+    call(id).then(setCompanyInfo(data)).catch().finally();
     */
   }, []);
 
