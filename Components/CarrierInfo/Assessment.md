@@ -68,12 +68,12 @@ export const Assessment = (props: IProps) => {
   ];
 
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">Assessment</div>
       <div className="grid-col-2-small">
-        {assessmentItems.map((assessment) => {
+        {assessmentItems.map((assessment, index) => {
           return (
-            <div className="text secondary">
+            <div className="text secondary" id={index}>
               {getIconBasedOnStatus(assessment.status)}
               {assessment.status
                 ? assessment.postiveMessage

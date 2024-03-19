@@ -37,21 +37,21 @@ export const HeaderInfoPanel = (props: IProps) => {
     <>
       <hr>
       <div className="grid-col-3-small">
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <div className="text secondary">AUTHORITY</div>
           <div className="text">
             {getIconBasedOnStatus(props.headerInfo.authority.isValid)}
             {props.headerInfo.authority.name}
           </div>
         </div>
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <div className="text secondary">OPERATING STATUS</div>
           <div className="text">
             {getIconBasedOnStatus(props.headerInfo.operatingStatus.isValid)}
             <b>{props.headerInfo.operatingStatus.name}</b>
           </div>
         </div>
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <div className="text secondary">AUTHORITY AGE</div>
           <div className="text">
             <b>{getTimeAgo(props.headerInfo.authorityAge)}</b>

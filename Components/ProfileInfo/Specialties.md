@@ -22,7 +22,7 @@ Component Logic and props passing
 //Note- we could have also created a modal where we could have fetched color or the specialty that defines it behaviour.
 export const Specialties = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">Specialties</div>
       <div className="specialties">
         {props.specialties.map((specialty: String) => {

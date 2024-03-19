@@ -32,8 +32,8 @@ export const Contacts = (props: IProps) => {
       {props.contacts.map(
         (contact: Contact, index: Number, array: Contact[]) => {
           return (
-            <>
-              <div className="flex-column-small">
+            <div id={contact.id}>
+              <div className="flex-col-small">
                 <div className="text secondary">{contact.workAt}</div>
                 <div className="text">{contact.name}</div>
                 <div className="text">
@@ -42,7 +42,7 @@ export const Contacts = (props: IProps) => {
                 </div>
               </div>
               {index != array.length - 1 && <hr />}
-            </>
+            </div>
           );
         }
       )}

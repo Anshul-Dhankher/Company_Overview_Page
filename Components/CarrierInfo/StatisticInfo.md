@@ -11,7 +11,7 @@ Props
 ```ts
 interface IProps {
   header: String;
-  statisticsInfo: StatisticInfo;
+  Statistics: StatisticInfo;
 }
 ```
 
@@ -29,7 +29,7 @@ Component Logic and props passing
 ```tsx
 export const StatisticInfo = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">{props.header}</div>
       <div className="grid-col-3-small">
         <div>

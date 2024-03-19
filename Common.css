@@ -35,16 +35,16 @@
   color: #888888;
 }
 
-.flex-column-small {
+.flex-col-small {
   display: flex;
   flex-direction: column;
-  column-gap: 5px;
+  row-gap: 5px;
 }
 
-.flex-column-big {
+.flex-col-big {
   display: flex;
   flex-direction: column;
-  column-gap: 15px;
+  row-gap: 15px;
 }
 
 .grid-col-2-small {

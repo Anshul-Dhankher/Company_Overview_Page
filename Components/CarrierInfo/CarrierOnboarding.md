@@ -30,9 +30,9 @@ Component Logic and props passing
  */
 export const CarrierOnboarding = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">Carrier onboarding</div>
-      <div className="flex-column-small">
+      <div className="flex-col-small">
         <div className="text secondary">
           {getIconBasedOnStatus(props.isCarrierSetupWithCompany)} This Carrier
           is {!props.isCarrierSetupWithCompany && "not"} setup with you company.

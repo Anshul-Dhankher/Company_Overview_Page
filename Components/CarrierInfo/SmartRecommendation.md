@@ -30,10 +30,10 @@ Component Logic and props passing
  */
 export const SmartRecommendation = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">Smart recommendation</div>
       <div>
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <div className="text secondary">Recommendation</div>
           <div>
             {getIconBasedOnRecommendation(props.recommendation.isRecommended)}
@@ -43,7 +43,7 @@ export const SmartRecommendation = (props: IProps) => {
           </div>
         </div>
         <hr />
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <div className="text secondary">
             Reason
             <p>{props.recommendation.description}</p>

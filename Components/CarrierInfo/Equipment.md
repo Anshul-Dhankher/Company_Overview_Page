@@ -29,7 +29,7 @@ Component Logic and props passing
 ```tsx
 export const Equipment = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       <div className="heading">Equipment</div>
       <div className="flex-col-small">
         <div className="text">{props.equipment.powerUnits} Power units</div>

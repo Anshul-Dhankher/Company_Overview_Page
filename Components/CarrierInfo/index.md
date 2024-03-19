@@ -13,8 +13,8 @@ This component will be the parent component for below and will accept props from
   - [Assessment](Assessment.md)
   - [Equipment](Equipment.md)
   - [StatisticInfo](StatisticInfo.md) (3 occurance with different props for inspections, violations, crashes)
-  - InsuranceFilling
-  - Associations
+  - [InsuranceFilling](InsuranceFilling.md)
+  - [Associations](Associations.md)
 
 Typescript Types
 

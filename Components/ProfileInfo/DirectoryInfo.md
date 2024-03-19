@@ -28,10 +28,10 @@ Component Logic and props passing
 ```tsx
 export const DirectoryInfo = (props: IProps) => {
   return (
-    <div className="flex-column-big">
+    <div className="flex-col-big">
       /*Suggestion - Details doesn't convey a right message */
       <div className="heading">Details</div>
-      <div className="info-card flex-column-small">
+      <div className="info-card flex-col-small">
         <div className="text secondary">Hours</div>
         <div className="text">
           {getTimeOnly(props.openAt)} - {getTimeOnly(props.closesAt)}
@@ -45,15 +45,15 @@ export const DirectoryInfo = (props: IProps) => {
         </div>
       </div>
       <div className="info-card">
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <span className="text secondary">Phone</span>
           <span className="text">{props.directoryInfo.phone}</span>
         </div>
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <span className="text secondary">Address</span>
           <span className="text">{props.directoryInfo.address}</span>
         </div>
-        <div className="flex-column-small">
+        <div className="flex-col-small">
           <span className="text secondary">Website</span>
           <a href={props.directoryInfo.website}>{props.directoryInfo.website}</span>
         </div>

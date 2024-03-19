@@ -20,13 +20,13 @@ Component Logic and props passing
 export const RateCarrierCard = (props: IProps) => {
   return (
     <div className="rateCarrierCard info-card">
-      <div className="flex-column-small">
+      <div className="flex-col-small">
         <div>Rate this carrier</div>
         <div>You booked this carrier {getTimeAgo(props.lastBookingDate)}</div>
       </div>
       /*These are button icons which can be api's calls to backend to save response
       for user can store the feedback in database. */
-      <div className="flex-column-small">
+      <div className="flex-col-small">
         <ThumbsUpIcon />
         <ThumbsDownIcon />
       </div>
