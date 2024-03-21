@@ -11,7 +11,7 @@ Props
 ```ts
 interface IProps {
   header: String;
-  Statistics: StatisticInfo;
+  statistics: StatisticInfo;
 }
 ```
 
@@ -34,11 +34,11 @@ export const StatisticInfo = (props: IProps) => {
       <div className="grid-col-3-small">
         <div>
           <div className="text secondary">Within the past year</div>
-          <div className="text">{props.StatisticInfo.withinYears}</div>
+          <div className="text">{props.statistics.withinYears}</div>
         </div>
         <div>
           <div className="text secondary">Total</div>
-          <div className="text">{props.StatisticInfo.total}</div>
+          <div className="text">{props.statistics.total}</div>
         </div>
       </div>
     </div>
