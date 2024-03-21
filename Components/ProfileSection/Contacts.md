@@ -4,7 +4,7 @@ This Component will be the last component in the left which will show the all th
 
 ### Component Name - `<Contacts />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 

@@ -1,20 +1,20 @@
-# DirectoryInfo
+# Directory
 
 This Component will be the fifth component in left side which will be a card showing us the details for phone, address, website and open to close details.
 
-### Component Name - `<DirectoryInfo />`
+### Component Name - `<Directory />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 
 ```ts
 interface IProps {
-  directoryInfo: DirectoryInfo;
+  directory: Directory;
 }
 
 //Note- Not defined here but for reference looking up
-interface DirectoryInfo {
+interface Directory {
   opensAt: Date;
   closesAt: Date;
   phone: String;
@@ -26,7 +26,7 @@ interface DirectoryInfo {
 Component Logic and props passing
 
 ```tsx
-export const DirectoryInfo = (props: IProps) => {
+export const Directory = (props: IProps) => {
   return (
     <div className="flex-col-big">
       /*Suggestion - Details doesn't convey a right message */
@@ -47,15 +47,15 @@ export const DirectoryInfo = (props: IProps) => {
       <div className="info-card">
         <div className="flex-col-small">
           <span className="text secondary">Phone</span>
-          <span className="text">{props.directoryInfo.phone}</span>
+          <span className="text">{props.directory.phone}</span>
         </div>
         <div className="flex-col-small">
           <span className="text secondary">Address</span>
-          <span className="text">{props.directoryInfo.address}</span>
+          <span className="text">{props.directory.address}</span>
         </div>
         <div className="flex-col-small">
           <span className="text secondary">Website</span>
-          <a href={props.directoryInfo.website}>{props.directoryInfo.website}</span>
+          <a href={props.directory.website}>{props.directory.website}</span>
         </div>
       </div>
     </div>

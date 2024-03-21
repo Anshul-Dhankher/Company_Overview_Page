@@ -1,13 +1,13 @@
-# CarrierInfo
+# InsightSection
 
 This Component will be the right portion of the UI page which will have the details for recommendation carrierOnboarding,insuranceAssociation etc.
 which is designed style in flex with row gap defined to achieve the same UI design.
 
-### Component Name - `<CarrierInfo />`
+### Component Name - `<InsightSection />`
 
 This component will be the parent component for below and will accept props from CompanyOverview Component:-
 
-- CarrierInfo
+- InsightSection
   - [SmartRecommendation](SmartRecommendation.md)
   - [CarrierOnboarding](CarrierOnboarding.md)
   - [Assessment](Assessment.md)
@@ -35,9 +35,9 @@ interface IProps {
 Component Logic and props passing
 
 ```tsx
-export const CarrierInfo = (props: IProps) => {
+export const InsightSection = (props: IProps) => {
   return (
-    <div className="overview-item">
+    <div className="overview-section">
       <SmartRecommendation recommendation={props.recommendation} />
       <CarrierOnboarding onboarding={props.Onboarding} />
       <Assessment assessment={props.assessment} />

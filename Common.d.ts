@@ -9,7 +9,7 @@ export type CompanyHeaderInfo = {
   authorityAge: Date;
 };
 
-export type DirectoryInfo = {
+export type Directory = {
   opensAt: Date;
   closesAt: Date;
   phone: String;
@@ -78,7 +78,7 @@ export type CompanyInfo = {
   headerInfo: CompanyHeaderInfo;
   imageGallery: String[];
   specialties: String[];
-  directoryInfo: DirectoryInfo;
+  directory: Directory;
   contacts: Contact[];
   recommendation: Recommendation;
   onBoarding: Onboarding;

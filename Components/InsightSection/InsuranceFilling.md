@@ -4,7 +4,7 @@ This Component will be the re-usable component which can define within years and
 
 ### Component Name - `<InsuranceFilling />`
 
-This Component will be child component and will accept props given below from CarrierInfo.
+This Component will be child component and will accept props given below from InsightSection.
 
 Props
 

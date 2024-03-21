@@ -7,21 +7,21 @@ This Component will be the root component for the company overview page where th
 This component will be the parent component for others and the data will flow as below :-
 
 - CompanyOverview
-  - [ProfileInfo](/Components/ProfileInfo/index.md)
-    - [HeaderInfoPanel](/Components/ProfileInfo/HeaderInfoPanel.md)
-    - [RateCarrierCard](/Components/ProfileInfo/RateCarrierCard.md)
-    - [ImageGallery](/Components/ProfileInfo/ImageGallery.md)
-    - [Specialties](/Components/ProfileInfo/Specialties.md)
-    - [DirectoryInfo](/Components/ProfileInfo/Specialties.md)
-    - [Contacts](/Components/ProfileInfo/Contacts.md)
-  - [CarrierInfo](/Components//CarrierInfo/index.md)
-    - [SmartRecommendation](/Components/CarrierInfo/SmartRecommendation.md)
-    - [CarrierOnboarding](/Components/CarrierInfo/CarrierOnboarding.md)
-    - [Assessment](/Components/CarrierInfo/Assessment.md)
-    - [Equipment](/Components/CarrierInfo/Equipment.md)
-    - [StatisticInfo](/Components/CarrierInfo/StatisticInfo.md) (3 occurance with different props for inspections, violations, crashes)
-    - [InsuranceFilling](/Components/CarrierInfo/InsuranceFilling.md)
-    - [Associations](/Components/CarrierInfo/Associations.md)
+  - [ProfileSection](/Components/ProfileSection/index.md)
+    - [HeaderInfoPanel](/Components/ProfileSection/HeaderInfoPanel.md)
+    - [RateCarrierCard](/Components/ProfileSection/RateCarrierCard.md)
+    - [ImageGallery](/Components/ProfileSection/ImageGallery.md)
+    - [Specialties](/Components/ProfileSection/Specialties.md)
+    - [Directory](/Components/ProfileSection/Specialties.md)
+    - [Contacts](/Components/ProfileSection/Contacts.md)
+  - [InsightSection](/Components//InsightSection/index.md)
+    - [SmartRecommendation](/Components/InsightSection/SmartRecommendation.md)
+    - [CarrierOnboarding](/Components/InsightSection/CarrierOnboarding.md)
+    - [Assessment](/Components/InsightSection/Assessment.md)
+    - [Equipment](/Components/InsightSection/Equipment.md)
+    - [StatisticInfo](/Components/InsightSection/StatisticInfo.md) (3 occurance with different props for inspections, violations, crashes)
+    - [InsuranceFilling](/Components/InsightSection/InsuranceFilling.md)
+    - [Associations](/Components/InsightSection/Associations.md)
 
 Typescript Types
 
@@ -33,7 +33,7 @@ export type CompanyInfo = {
   headerInfo: CompanyHeaderInfo;
   imageGallery: String[];
   specialties: String[];
-  directoryInfo: DirectoryInfo;
+  directory: Directory;
   contacts: Contact[];
   recommendation: Recommendation;
   onboarding: Onboarding;
@@ -51,7 +51,7 @@ Component Logic and props passing
 
 ```ts
 interface IProps {
-  id: String;
+  companyId: String;
 }
 ```
 
@@ -62,20 +62,20 @@ export const CompanyOverview = (props: IProps) => {
   useEffect(() => {
     /*
     API call to back for fetching companyInfo from backend.
-    call(id).then(setCompanyInfo(data)).catch().finally();
+    call(companyId).then(setCompanyInfo(data)).catch().finally();
     */
   }, []);
 
   return (
     <div className="company-overview">
-      <ProfileInfo
+      <ProfileSection
         lastBookingDate={companyInfo.lastBookingDate}
         headerInfo={companyInfo.headerInfo}
         specialties={companyInfo.specialties}
-        directoryInfo={companyInfo.directoryInfo}
+        directory={companyInfo.directory}
         contacts={companyInfo.contacts}
       />
-      <CarrierInfo
+      <InsightSection
         recommendation={companyInfo.recommendation}
         onboarding={companyInfo.onboarding}
         assessment={companyInfo.assessment}

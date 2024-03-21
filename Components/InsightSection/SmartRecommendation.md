@@ -4,7 +4,7 @@ This Component will be the top most right component which will show the smart re
 
 ### Component Name - `<SmartRecommendation />`
 
-This Component will be child component and will accept props given below from CarrierInfo.
+This Component will be child component and will accept props given below from InsightSection.
 
 Props
 

@@ -4,7 +4,7 @@ This Component will be the second component in left side which will be a card as
 
 ### Component Name - `<RateCarrierCard />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 

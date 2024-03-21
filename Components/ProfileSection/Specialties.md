@@ -4,7 +4,7 @@ This Component will be the fourth component in the left which will show the all 
 
 ### Component Name - `<Specialties />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 

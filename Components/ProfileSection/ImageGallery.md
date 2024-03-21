@@ -4,7 +4,7 @@ This Component will be the third component in left side which will be a basicall
 
 ### Component Name - `<ImageGallery />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 

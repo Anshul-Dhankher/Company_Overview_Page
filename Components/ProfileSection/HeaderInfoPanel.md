@@ -4,7 +4,7 @@ This Component will be the top most left component which will show the details o
 
 ### Component Name - `<HeaderInfoPanel />`
 
-This Component will be child component and will accept props given below from ProfileInfo.
+This Component will be child component and will accept props given below from ProfileSection.
 
 Props
 

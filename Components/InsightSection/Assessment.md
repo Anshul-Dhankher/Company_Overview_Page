@@ -4,7 +4,7 @@ This Component will be the third component on right which will show the details 
 
 ### Component Name - `<Assessment />`
 
-This Component will be child component and will accept props given below from CarrierInfo.
+This Component will be child component and will accept props given below from InsightSection.
 
 Props
 

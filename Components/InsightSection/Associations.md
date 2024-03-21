@@ -4,7 +4,7 @@ This Component will be the last component which will give details of association
 
 ### Component Name - `<Associations />`
 
-This Component will be child component and will accept props given below from CarrierInfo.
+This Component will be child component and will accept props given below from InsightSection.
 
 Props
 
